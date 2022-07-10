@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:layout_margin="10dp"
+        android:id="@+id/back_arrow"
+        android:src="@drawable/back_arrow"/>
+
+    <LinearLayout
+        android:layout_marginHorizontal="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/PrimaryText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enter_login"/>
+
+        <EditText
+            android:singleLine="true"
+            android:id="@+id/loginEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/loginErrorTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/DescribeText" />
+
+        <TextView
+            style="@style/PrimaryText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enter_password"/>
+
+        <EditText
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:id="@+id/passwordEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/passwordErrorTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/DescribeText" />
+
+        <Button
+            android:id="@+id/next_button"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/next"/>
+
+    </LinearLayout>
+
+
+
+
+
+</FrameLayout>

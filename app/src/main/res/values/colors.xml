@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="item_background">#006DC1</color>
+    <color name="app_background">#003D6C</color>
+    <color name="night_item_background">#002D50</color>
+    <color name="night_app_background">#001525</color>
+    <color name="yellow">#FFF200</color>
+</resources>

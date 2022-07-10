@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Messenger</string>
+    <string name="enter_login">Введите логин</string>
+    <string name="enter_password">Введите пароль</string>
+    <string name="next">Далее</string>
+    <string name="have_account">Уже есть аккаунт</string>
+    <string name="register">Регистрация</string>
+    <string name="welcome">Добро пожаловать</string>
+    <string name="repeat_password">Повторите пароль</string>
+    <string name="incorrect_login">Недопустимый логин</string>
+    <string name="repeat_password_error">Пароли не совпадают</string>
+    <string name="unexpected_error">Непредвиденная ошибка</string>
+    <string name="login_exists">Такой пользователь уже зарегистрирован</string>
+    <string name="user_not_found">Пользователь не найден</string>
+    <string name="password">Неверный пароль</string>
+    <string name="incorrect_password">Недопустимый пароль</string>
+    <string name="register_successful">Вы успешно зарегистрировались!</string>
+    <string name="register_rules"><i>- Логин должен содержать только буквы английского алфавита и цифры\n
+    - Логин должен содержать от 5 до 30 символов\n
+    - Пароль должен состоять из более чем 5 символов</i></string>
+    <string name="input_city">Введите название города</string>
+</resources>
