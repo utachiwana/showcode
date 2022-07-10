@@ -1,4 +1,4 @@
-package com.utachiwana.messenger.main
+package com.utachiwana.messenger.main.adapters
 
 import android.view.LayoutInflater
 import android.view.View

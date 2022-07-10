@@ -1,4 +1,4 @@
-package com.utachiwana.messenger.main
+package com.utachiwana.messenger.main.adapters
 
 import android.view.LayoutInflater
 import android.view.View
@@ -8,8 +8,6 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.utachiwana.messenger.R
 import com.utachiwana.messenger.main.pojo.CurrentWeather
-import com.utachiwana.messenger.network.WebConfig
-import java.util.*
 import kotlin.collections.ArrayList
 
 class WeatherAdapter : RecyclerView.Adapter<WeatherAdapter.WeatherViewHolder>() {

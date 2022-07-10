@@ -8,6 +8,8 @@ import androidx.core.widget.addTextChangedListener
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.utachiwana.messenger.appComponent
 import com.utachiwana.messenger.databinding.ActivityMainBinding
+import com.utachiwana.messenger.main.adapters.CityAdapter
+import com.utachiwana.messenger.main.adapters.WeatherAdapter
 import javax.inject.Inject
 
 class MainActivity : AppCompatActivity() {
