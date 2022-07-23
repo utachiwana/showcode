@@ -1,11 +1,13 @@
 package com.utachiwana.messenger.main.adapters
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.utachiwana.messenger.R
 import com.utachiwana.messenger.main.pojo.CurrentWeather
 import kotlin.collections.ArrayList
@@ -30,9 +32,16 @@ class WeatherAdapter : RecyclerView.Adapter<WeatherAdapter.WeatherViewHolder>() 
 
     fun add(weather: CurrentWeather?) {
         if (weather != null)
-            history.add(0,weather)
-        notifyItemInserted(history.size - 1)
+            history.add(0, weather)
+        notifyItemInserted(0)
     }
+
+    fun addAll(historyWeather: List<CurrentWeather>) {
+        history.addAll(historyWeather)
+        history.sortByDescending { it.dt }
+        notifyDataSetChanged()
+    }
+
 
     class WeatherViewHolder(itemView: View) :
         RecyclerView.ViewHolder(itemView) {
@@ -45,7 +54,8 @@ class WeatherAdapter : RecyclerView.Adapter<WeatherAdapter.WeatherViewHolder>() 
         private val date: TextView = itemView.findViewById(R.id.weather_date)
 
         fun bind(currentWeather: CurrentWeather) {
-            picture.setImageResource(currentWeather.getPicture())
+            Glide.with(itemView).load(currentWeather.getPictureLink())
+                .placeholder(R.drawable.ic_loading).fitCenter().into(picture)
             cityName.text = currentWeather.name
             temperature.text = "${currentWeather.getTemperature()} °C"
             description.text = currentWeather.getWeatherDesc()
@@ -55,3 +65,4 @@ class WeatherAdapter : RecyclerView.Adapter<WeatherAdapter.WeatherViewHolder>() 
 
     }
 }
+

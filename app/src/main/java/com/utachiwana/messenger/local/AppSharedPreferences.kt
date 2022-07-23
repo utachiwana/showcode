@@ -17,5 +17,6 @@ class AppSharedPreferences @Inject constructor(val context: Context) {
     fun getString(field: String): String = prefs.getString(field, "") ?: ""
 
     fun putString(field: String, value: String) = edit.putString(field, value).commit()
+    fun logout() = edit.clear().commit()
 
 }

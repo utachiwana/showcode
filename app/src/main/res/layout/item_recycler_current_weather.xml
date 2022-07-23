@@ -24,8 +24,7 @@
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:adjustViewBounds="true"
-                app:layout_constraintBottom_toTopOf="@id/weather_desc"
-                tools:src="@drawable/ic_sunny" />
+                app:layout_constraintBottom_toTopOf="@id/weather_desc" />
 
             <TextView
                 android:id="@+id/weather_desc"

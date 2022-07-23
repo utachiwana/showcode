@@ -19,4 +19,9 @@
     - Логин должен содержать от 5 до 30 символов\n
     - Пароль должен состоять из более чем 5 символов</i></string>
     <string name="input_city">Введите название города</string>
+    <string name="logout">Выйти</string>
+    <string name="logout_accept">Вы уверены, что хотите выйти из аккаунта?</string>
+    <string name="yes">Да</string>
+    <string name="cancel">Отмена</string>
+    <string name="weather">Просмотр погоды</string>
 </resources>

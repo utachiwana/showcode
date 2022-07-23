@@ -65,7 +65,6 @@ class StartActivity : AppCompatActivity() {
     }
 
     private fun registerDone() {
-        supportFragmentManager.popBackStack(0, FragmentManager.POP_BACK_STACK_INCLUSIVE)
         supportFragmentManager.beginTransaction()
             .setCustomAnimations(
                 R.anim.slide_in_left,
@@ -73,7 +72,8 @@ class StartActivity : AppCompatActivity() {
                 R.anim.slide_in_right,
                 R.anim.slide_out_left
             )
-            .add(R.id.start_frame_layout, AuthFragment())
+            .replace(R.id.start_frame_layout, AuthFragment())
+            .addToBackStack(null)
             .commit()
         Toast.makeText(this, getString(R.string.register_successful), Toast.LENGTH_LONG)
     }

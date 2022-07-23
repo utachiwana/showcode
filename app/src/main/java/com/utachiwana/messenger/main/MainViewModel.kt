@@ -10,15 +10,18 @@ import javax.inject.Inject
 class MainViewModel(private val repository: MainRepository) : ViewModel() {
 
     private val _cities = MutableLiveData<List<CityClassItem>?>()
-    val cities : LiveData<List<CityClassItem>?> = _cities
+    val cities: LiveData<List<CityClassItem>?> = _cities
 
     private val _weather = MutableLiveData<CurrentWeather?>()
-    val weather : LiveData<CurrentWeather?> = _weather
+    val weather: LiveData<CurrentWeather?> = _weather
+
+    private val _historyWeather = MutableLiveData<List<CurrentWeather>>()
+    val historyWeather: LiveData<List<CurrentWeather>> = _historyWeather
 
     private val _loading = MutableLiveData(false)
-    val loading : LiveData<Boolean> = _loading
+    val loading: LiveData<Boolean> = _loading
 
-    fun searchCity(name: String){
+    fun searchCity(name: String) {
         viewModelScope.launch {
             _cities.value = repository.searchCity(name)
         }
@@ -32,7 +35,16 @@ class MainViewModel(private val repository: MainRepository) : ViewModel() {
         }
     }
 
-    class Factory @Inject constructor(private val repository: MainRepository) : ViewModelProvider.Factory{
+    fun loadHistoryWeather() {
+        _loading.value = true
+        viewModelScope.launch {
+            _historyWeather.value = repository.getWeatherHistory()
+            _loading.value = false
+        }
+    }
+
+    class Factory @Inject constructor(private val repository: MainRepository) :
+        ViewModelProvider.Factory {
 
         @Suppress("UNCHECKED_CAST")
         override fun <T : ViewModel> create(modelClass: Class<T>): T {
