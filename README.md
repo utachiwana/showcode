@@ -1,6 +1,6 @@
 # SHOWCODE - Смотрим погоду с OpenWeatherMap
 
-Написано полностью на Kotlin. Используется MVVM, Dagger2, Retrofit2, Firebase, Kotlin Coroutines, SharedPreferences, RecyclerView/Adapter
+Написано полностью на Kotlin. Используется MVVM, Dagger2, Room, Glide, Retrofit2, Firebase, Kotlin Coroutines, SharedPreferences, RecyclerView/Adapter
 </br>
 Авторизация через хранилище Firestore. При успешном входе больше вводить данные авторизации не придется.
 </br>
