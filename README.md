@@ -2,6 +2,9 @@
 
 Написано полностью на Kotlin. Используется MVVM, Dagger2, Room, Glide, Retrofit2, Firebase, Kotlin Coroutines, SharedPreferences, RecyclerView/Adapter
 </br>
+
+Установочник https://github.com/utachiwana/showcode/blob/master/app-release.apk
+
 Авторизация через хранилище Firestore. При успешном входе больше вводить данные авторизации не придется.
 </br>
 
