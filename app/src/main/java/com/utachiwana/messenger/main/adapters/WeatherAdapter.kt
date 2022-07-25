@@ -38,7 +38,7 @@ class WeatherAdapter : RecyclerView.Adapter<WeatherAdapter.WeatherViewHolder>() 
 
     fun addAll(historyWeather: List<CurrentWeather>) {
         history.addAll(historyWeather)
-        history.sortByDescending { it.dt }
+        history.sortByDescending { it.uid }
         notifyDataSetChanged()
     }
 

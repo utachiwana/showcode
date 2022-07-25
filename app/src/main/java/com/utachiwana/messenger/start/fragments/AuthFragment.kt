@@ -56,8 +56,12 @@ class AuthFragment : Fragment() {
                 binding.loginErrorTv.text = ""
             }
             when (state) {
-                FConfig.AUTH_WRONG_PWD -> binding.loginErrorTv.text =
+                FConfig.AUTH_WRONG_PWD -> binding.passwordErrorTv.text =
                     getString(R.string.password)
+                FConfig.REG_INCORRECT_PWD -> binding.passwordErrorTv.text =
+                    getString(R.string.incorrect_password)
+                FConfig.REG_INCORRECT_LOGIN -> binding.loginErrorTv.text =
+                    getString(R.string.incorrect_login)
                 FConfig.AUTH_WRONG_LOGIN -> binding.loginErrorTv.text =
                     getString(R.string.incorrect_login)
                 FConfig.EMPTY_PWD -> binding.passwordErrorTv.text =

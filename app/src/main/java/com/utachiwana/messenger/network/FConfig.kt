@@ -5,7 +5,6 @@ object FConfig {
     const val FIREBASE_COL_USERS = "users"
     const val FIREBASE_FIELD_PWD = "password"
     const val FIREBASE_FIELD_LOGIN = "login"
-    const val PREFERENCES_AUTH = "auth"
 
     const val EMPTY_LOGIN = "reg_empty_login"
     const val EMPTY_PWD = "reg_empty_pwd"

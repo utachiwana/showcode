@@ -12,8 +12,8 @@ import kotlin.math.roundToInt
 @Entity
 data class CurrentWeather(
     @PrimaryKey(autoGenerate = true)
-    @ColumnInfo(name = "id")
-    val id: Int,
+    @ColumnInfo(name = "uid")
+    val uid: Int,
     @ColumnInfo(name = "date")
     val dt: Int,
     @Embedded
