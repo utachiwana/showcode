@@ -17,5 +17,5 @@
 По дизайну на высшую награду не претендую
 
 <img src="https://github.com/utachiwana/showcode/blob/master/readme/screen.jpg" width="250">
-<img src="https://github.com/utachiwana/showcode/blob/master/readme/search.png" width="250">
-<img src="https://github.com/utachiwana/showcode/blob/master/readme/exit.png" width="250">
+<img src="https://github.com/utachiwana/showcode/blob/master/readme/search.jpg" width="250">
+<img src="https://github.com/utachiwana/showcode/blob/master/readme/exit.jpg" width="250">
