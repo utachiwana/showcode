@@ -1,7 +1,7 @@
 package com.utachiwana.messenger.dagger
 
-import com.utachiwana.messenger.network.RetrofitApi
-import com.utachiwana.messenger.network.WebConfig
+import com.utachiwana.messenger.data.network.RetrofitApi
+import com.utachiwana.messenger.data.network.WebConfig
 import dagger.Module
 import dagger.Provides
 import okhttp3.OkHttpClient
@@ -16,7 +16,7 @@ class RetrofitModule {
     @Singleton
     fun provideOkHttpClient() : OkHttpClient = OkHttpClient().newBuilder().addInterceptor { chain ->
         val url =
-            chain.request().url().newBuilder().addQueryParameter("appid", WebConfig.APPID).build()
+            chain.request().url.newBuilder().addQueryParameter("appid", WebConfig.APPID).build()
         chain.proceed(chain.request().newBuilder().url(url).build())
     }.build()
 

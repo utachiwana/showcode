@@ -4,6 +4,7 @@ import android.app.Application
 import android.content.Context
 import com.utachiwana.messenger.dagger.AppComponent
 import com.utachiwana.messenger.dagger.DaggerAppComponent
+import com.utachiwana.messenger.data.local.AppSharedPreferences
 
 class MessengerApp : Application() {
 
@@ -18,6 +19,5 @@ val Context.appComponent: AppComponent
         is MessengerApp -> appComponent
         else -> this.applicationContext.appComponent
     }
-
 
 

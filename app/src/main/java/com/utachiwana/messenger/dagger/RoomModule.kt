@@ -2,7 +2,7 @@ package com.utachiwana.messenger.dagger
 
 import android.content.Context
 import androidx.room.Room
-import com.utachiwana.messenger.local.LocalDatabase
+import com.utachiwana.messenger.data.local.LocalDatabase
 import dagger.Module
 import dagger.Provides
 import javax.inject.Singleton

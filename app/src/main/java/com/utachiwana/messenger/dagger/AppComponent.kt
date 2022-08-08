@@ -1,10 +1,10 @@
 package com.utachiwana.messenger.dagger
 
 import android.content.Context
-import com.utachiwana.messenger.main.MainActivity
-import com.utachiwana.messenger.start.fragments.AuthFragment
-import com.utachiwana.messenger.start.fragments.RegisterFragment
-import com.utachiwana.messenger.start.StartActivity
+import com.utachiwana.messenger.ui.activities.ComposeMainActivity
+import com.utachiwana.messenger.ui.fragments.AuthFragment
+import com.utachiwana.messenger.ui.fragments.RegisterFragment
+import com.utachiwana.messenger.ui.activities.StartActivity
 import dagger.BindsInstance
 import dagger.Component
 import javax.inject.Singleton
@@ -16,7 +16,7 @@ interface AppComponent {
     fun inject(startActivity: StartActivity)
     fun inject(authFragment: AuthFragment)
     fun inject(registerFragment: RegisterFragment)
-    fun inject(mainActivity: MainActivity)
+    fun inject(composeMainActivity: ComposeMainActivity)
 
     @Component.Builder
     interface Builder {
