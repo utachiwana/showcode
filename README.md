@@ -1,6 +1,6 @@
 # SHOWCODE - Смотрим погоду с OpenWeatherMap
 
-Написано полностью на Kotlin. Используется MVVM, Dagger2, Room, Glide, Retrofit2, Firebase, Kotlin Coroutines, SharedPreferences, RecyclerView/Adapter
+Написано полностью на Kotlin. Используется MVVM, Dagger2, Jetpack Compose, Coil, Room, Glide, Retrofit2, Firebase, Coroutines, SharedPreferences, RecyclerView/Adapter
 </br>
 
 Установочник https://github.com/utachiwana/showcode/blob/master/app-release.apk
@@ -16,4 +16,4 @@
 </br>
 По дизайну на высшую награду не претендую
 
-<img src="https://github.com/utachiwana/showcode/blob/master/readme/weather.png" width="250">
+<img src="https://github.com/utachiwana/showcode/blob/master/readme/screen.jpg" width="250"> <img src="https://github.com/utachiwana/showcode/blob/master/readme/search.jpg" width="250"> <img src="https://github.com/utachiwana/showcode/blob/master/readme/exit.jpg" width="250">
